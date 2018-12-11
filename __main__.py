@@ -29,9 +29,9 @@ def main():
         while True:
             logger.debug("waiting id card")
             # ここでカード読み込み
-            if database.confirm("番号"), "IDm"):
+            if database.confirm("ここに番号"), "ここにIDm"):
                 srv.open_lock()
-                slack.send_slack(name)
+                slack.send_slack("ここになまえ")
                 time.sleep(10)
                 while door.door_status() == door.OPEN:
                     time.sleep(0.5)

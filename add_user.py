@@ -20,9 +20,9 @@ def main():
 
     #　ここでカード読み込み
 
-    database.make_info("番号", name, "IDm")
+    database.make_info("ここに番号", name, "ここにIDm")
     print ("追加完了しました。")
-    slack.add_user("番号", name)
+    slack.add_user("ここに番号", name)
     time.sleep(1)
 
 

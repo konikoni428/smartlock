@@ -6,19 +6,19 @@ switch($input){
 
   "1"{
   Write-Output "しばらくお待ちください。"
-  ssh pi@192.168.1.12 -t 'stty erase ^H
+  ssh pi@192.168.xxx.xxx -t 'stty erase ^H
   sh add_user.sh'
   }
  
   "2"{
   Write-Output "しばらくお待ちください。"
-  ssh pi@192.168.1.12 -t 'stty erase ^H
+  ssh pi@192.168.xxx.xxx -t 'stty erase ^H
   sh rename_user.sh'
   }
  
   "3"{
   Write-Output "しばらくお待ちください。"
-  ssh pi@192.168.1.12 -t 'stty erase ^H
+  ssh pi@192.168.xxx.xxx -t 'stty erase ^H
   sh delete_user.sh'
   }
   
