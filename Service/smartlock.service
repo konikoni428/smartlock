@@ -1,0 +1,11 @@
+[Unit]
+Description = entry controller and manager
+
+[Service]
+ExecStart=/bin/sh /home/pi/smartlockd.sh
+ExecStop=/bin/kill -INT ${MAINPID}
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
